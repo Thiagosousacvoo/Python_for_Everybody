@@ -1,8 +1,9 @@
-iniciando = -1
-print('Antes', iniciando)
-for numero in [9, 41, 12, 3, 74, 15]:
-    if numero > iniciando :
-        iniciando = numero
-    print(iniciando, numero)
-
-print('Depois', iniciando)
+menor = None
+print('Antes')
+for value in [9, 41, 12, 3, 74, 15]:
+    if menor is None: 
+        menor = value
+    elif value < menor:
+        menor = value
+    print(menor, value)
+print('Depois', menor)
